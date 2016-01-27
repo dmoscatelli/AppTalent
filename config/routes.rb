@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :surveys 
     resources :attempts
     resources :companies
+    resources :answers
+    resources :pages
 
      root to: "pages#index"
 

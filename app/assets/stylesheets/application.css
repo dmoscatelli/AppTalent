@@ -15,9 +15,18 @@
  */
 
 
+body {
+	font-family: 'Open Sans'
+}
+
+
+h1 {
+	font-size: 4.0em;
+}
  .navbar {
  	background-color: #4285F4;
  	height: 70px;
+ 	border-bottom: none;
  }
 
  .navbar-left {
@@ -37,4 +46,63 @@
  	height: 50px;
  }
 
+ .cover_header {
+ 	text-align: center;
+ 	height: 700px;
+ 	background: url(/assets/bg_15.jpg) #303a43; 
+ 	background-size: cover;
+ 	padding: 60px 0 60px 0;
+
  
+ }
+
+ .signin-box {
+ 	width: 370px;
+ 	height: 500px;
+ 	background-color: rgb(255,255,255, 0.4);
+ 	margin: 0 auto;
+
+ }
+
+ .talent-logo {
+	padding-top: 20px;
+}
+
+#welcome {
+	color: white;
+	letter-spacing: 1.9px;
+ 	font-weight: 200;
+}
+ 
+ #get-started {
+ 	color: white;
+ 	margin-top: -5px;
+ }
+
+ #comp-key {
+ 	height: 50px;
+ 	font-size: 1.2em;
+ 	text-align: center;
+ 	text-transform: uppercase;
+ 	border: 1px solid #5CB85C;
+ }
+
+ #comp-button {
+ 	text-transform: none;
+ }
+
+ input { 
+    text-transform: uppercase;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    text-transform: none;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    text-transform: none;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    text-transform: none;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    text-transform: none;
+}

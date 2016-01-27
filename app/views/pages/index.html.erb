@@ -1,0 +1,24 @@
+<div class="cover_header">
+		<%= image_tag "plextalent_app.png", class: "talent-logo" %>
+	<h1 id="welcome" >Welcome to Talent</h1>
+		<h3 id="get-started">To get started, verify your company key</h3>
+		<br>
+		<br>
+<div class="signin-box">
+
+
+
+<div class='form-group col-sm-12'>
+
+<%= form_tag pages_path do %>
+
+<%= text_field_tag :company_key, nil, class: 'form-control', id: "comp-key", placeholder: "Enter company key"  %>
+<br>
+<%= submit_tag "Verify Key", class: "btn btn-success btn-lg btn-block", id: "comp-button" %>
+	
+<% end %>
+</div>
+
+
+</div>
+</div>
