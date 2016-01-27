@@ -1,0 +1,17 @@
+
+<%= form_for @company do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name, class: 'form-control' %>
+<br>
+<%= f.label	:company_key %>
+<%= f.text_field :company_key, class: 'form-control', id: "key", :readonly => true %>
+
+<% if current_page?(action: 'new') %>
+<button type="button" id="mybutton" class='form-control'>Generate Key</button>
+<% end %>
+<br>
+<%= f.submit class: 'pull-left btn btn-primary' %>
+
+<% end %>
+
+

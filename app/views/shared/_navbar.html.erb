@@ -1,0 +1,60 @@
+<header>
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <%= link_to surveys_path, class: 'navbar-brand' do %>
+          <%= render 'shared/rr_logo' %>
+        <% end -%>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <%= link_to surveys_path do %>
+              All surveys
+              <span class='badge'> <%= surveys_count %> </span>
+            <% end -%>
+          </li>
+          <% if current_admin %>
+          <li>
+            <%= link_to companies_path do %>
+              All Companies
+              <span class='badge'> <%= companies_count %> </span>
+            <% end -%>
+          </li>
+          <% end %>
+
+
+        <% if current_admin %>
+              <li> <%= link_to ' New Opinion Poll', new_survey_path(type: 'poll') %> </li>
+              <li> <%= link_to ' New Quiz', new_survey_path(type: 'quiz') %> </li>
+              <li> <%= link_to ' New Score Survey', new_survey_path(type: 'score') %> </li>
+              <li> <%= link_to ' New Company', new_company_path %> </li>
+          </li>
+        <% end %>
+        </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <p class="navbar-text">
+                <% if user_signed_in?%>
+                  Logged in as:
+                  <b> <%= current_user.email %> </b>
+                  <%= link_to 'Log out', destroy_user_session_path, :method => :delete %>
+                <% elsif admin_signed_in? %>
+                   Logged in as:
+                   <b><%= current_admin.email %> </b>
+                   <%= link_to 'Log out', destroy_admin_session_path, :method => :delete %>
+                <% end %>
+              </p>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/gem_header_info' %>
+</header>
