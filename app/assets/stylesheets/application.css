@@ -14,4 +14,27 @@
  *= require_self
  */
 
+
+ .navbar {
+ 	background-color: #4285F4;
+ 	height: 70px;
+ }
+
+ .navbar-left {
+ 	padding-top: 10px;
+ }
+
+	
+ .navbar-text > a {
+ 	color: white;
+ }
+
+  .navbar-text  {
+  	color: white !important;
+  }
+
+ .gem-info {
+ 	height: 50px;
+ }
+
  

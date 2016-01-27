@@ -1,6 +1,31 @@
 <div class="gem-info">
   <div class="container">
-    <div class="text text-muted">
-    </div>
+    	<div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <%= link_to surveys_path do %>
+              All surveys
+              <span class='badge'> <%= surveys_count %> </span>
+            <% end -%>
+          </li>
+          <% if current_admin %>
+          <li>
+            <%= link_to companies_path do %>
+              All Companies
+              <span class='badge'> <%= companies_count %> </span>
+            <% end -%>
+          </li>
+          <% end %>
+
+
+        <% if current_admin %>
+              <li> <%= link_to ' New Opinion Poll', new_survey_path(type: 'poll') %> </li>
+              <li> <%= link_to ' New Quiz', new_survey_path(type: 'quiz') %> </li>
+              <li> <%= link_to ' New Score Survey', new_survey_path(type: 'score') %> </li>
+              <li> <%= link_to ' New Company', new_company_path %> </li>
+          </li>
+        <% end %>
+        </ul>
   </div>
 </div>
+
