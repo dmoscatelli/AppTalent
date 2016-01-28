@@ -25,7 +25,7 @@
 
   <div class="field">
     <%= f.label :company_key %><br />
-    <%= f.text_field :company_key %>
+    <%= f.text_field :company_key, :value =>  session[:company_key]  %>
   </div>
 
   <div class="actions">

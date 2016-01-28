@@ -19,7 +19,7 @@ module ApplicationHelper
   def is_active?(link_path)
     current_page?(link_path) ? 'active' : nil
   end
-
+  
   #def current_user
    # @user ||= User.find_by(id: session[:user_id])
   #end

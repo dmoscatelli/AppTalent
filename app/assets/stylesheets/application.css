@@ -16,7 +16,7 @@
 
 
 body {
-	font-family: 'Open Sans'
+	font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -71,12 +71,13 @@ h1 {
 #welcome {
 	color: white;
 	letter-spacing: 1.9px;
- 	font-weight: 200;
+ 	font-weight: 300;
 }
  
  #get-started {
  	color: white;
  	margin-top: -5px;
+ 	font-weight: 300;
  }
 
  #comp-key {
@@ -87,12 +88,23 @@ h1 {
  	border: 1px solid #5CB85C;
  }
 
+ #comp-error-key {
+  height: 50px;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #D03232;
+
+ }
+
+
+
  #comp-button {
  	text-transform: none;
  }
 
  input { 
-    text-transform: uppercase;
+   
 }
 ::-webkit-input-placeholder { /* WebKit browsers */
     text-transform: none;
@@ -106,3 +118,6 @@ h1 {
 :-ms-input-placeholder { /* Internet Explorer 10+ */
     text-transform: none;
 }
+
+
+
