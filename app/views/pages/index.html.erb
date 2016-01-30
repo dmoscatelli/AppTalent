@@ -29,10 +29,15 @@
           <h4 class="modal-title" id="todo">Company Key Verification</h4>
         </div>
         <div class="modal-body">
-    		<p id="response"><%= @company %></p>
+    		<p id="response"></p>
+    		<h3 id="verified"></h3>
+    		<div class="key-container">
+    		<h4 id="key"></h4>
+    		</div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+			<%= button_to "Continue", new_user_registration_path, :id => "continue-button", :class =>  "btn btn-success btn-lg btn-block", :method => :get %> 
         </div>
       </div>
     </div>

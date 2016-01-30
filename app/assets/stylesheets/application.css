@@ -103,6 +103,30 @@ h1 {
  	text-transform: none;
  }
 
+  
+.modal-body {
+
+}
+
+.key-container {
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#key {
+  background-color: #E9E9EB;
+  padding: 10px;
+  font-weight: 600;
+  
+}
+
+
+.modal-footer {
+  text-align: center;
+}
+
+
  input { 
    
 }

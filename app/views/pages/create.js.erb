@@ -1,2 +1,14 @@
-$('#notes').modal('show');
-$('#response').text("<%= @response %>");
+
+<% if @key == "None" %>
+	$("#comp-key").attr("id", "comp-error-key");
+	$("#comp-error-key").val("");
+	$("#comp-error-key").attr("placeholder", "Invalid Key");
+	$("#verify-key").effect("shake");
+<% else %>
+	$("#comp-error-key").attr("placeholder", "Enter company key");
+	$("#comp-error-key").attr("id", "comp-key");
+	$('#notes').modal('show');
+	$('#verified').text("<%= @verified %>");
+	$('#key').text("<%= @key %>");
+<% end %>
+
