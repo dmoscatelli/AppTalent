@@ -9,6 +9,9 @@ Rails.application.routes.draw do
     resources :answers
     resources :pages
 
+    # This is a page to verify the company key, if the user has not done so already
+    get '/verify', :to => 'pages#verify'
+
      root to: "pages#index"
 
      delete 'attempts/:survey_id/:user_id' => 'attempts#delete_user_attempts', as: :delete_user_attempts

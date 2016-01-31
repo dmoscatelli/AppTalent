@@ -5,6 +5,20 @@ class PagesController < ApplicationController
 	end 
 
 
+	def verify
+		if session[:company_key] && current_user
+			flash[:notice] = "You have already verified your company key." 
+			redirect_to root_path
+		elsif session[:company_key]
+			flash[:notice] = "You have already verified your company key."
+			redirect_to new_user_registration_path
+		elsif current_user
+			flash[:notice] = "You have already verified your company key."
+			redirect_to root_path
+		end 
+	end 
+
+
 	def create
 		@company = Company.all
 
