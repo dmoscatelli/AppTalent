@@ -51,7 +51,7 @@ class AttemptsController < ApplicationController
   end
 
   def delete_user_attempts
-    Survey::Attempt.where(participant_id: params[:user_id], survey_id: params[:survey_id]).destroy_all
+    Survey::Attempt.where(participant_id: current_user, survey_id: params[:survey_id]).destroy_all
     redirect_to new_attempt_path(survey_id: params[:survey_id])
   end
 

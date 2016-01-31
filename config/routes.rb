@@ -2,7 +2,8 @@ Rails.application.routes.draw do
 
 
   devise_for :admins
-  devise_for :users
+  # To tell Devise to use our custom controller, allowing the company key to be saved
+  devise_for :users, :controllers => { registrations: 'registrations' }
   resources :surveys 
     resources :attempts
     resources :companies
@@ -12,9 +13,12 @@ Rails.application.routes.draw do
     # This is a page to verify the company key, if the user has not done so already
     get '/verify', :to => 'pages#verify'
 
+ 
+
+
      root to: "pages#index"
 
-     delete 'attempts/:survey_id/:user_id' => 'attempts#delete_user_attempts', as: :delete_user_attempts
+     delete 'attempts/:survey_id/:current_user' => 'attempts#delete_user_attempts', as: :delete_user_attempts
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -21,8 +21,7 @@ class PagesController < ApplicationController
 
 	def create
 		@company = Company.all
-
-
+		
 		respond_to do |format| 
 		    format.html {
 		      if @company.where(company_key: params[:company_key]).exists?
