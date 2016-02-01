@@ -17,7 +17,6 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-
 }
 
 
@@ -25,12 +24,67 @@ h1 {
 	font-size: 4.0em;
 }
 
+.flash {
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+
+}
+
 
  .navbar {
  	background-color: #4285F4;
  	height: 70px;
  	border-bottom: none;
+  border-radius: 0px;
+  margin: 0px;
+  width: 100%;
  }
+
+ #btn-custom-log {
+  margin-top: 3px;
+  background: #4285F4;
+  color: white; 
+  text-decoration: none;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 0px;
+  font-size: 1.1em !important;
+  padding: 10px 15px 10px 15px;
+
+  }
+
+  #btn-custom-log:hover {
+  margin-top: 3px;
+  background: #5CB85C;
+  color: white; 
+  text-decoration: none;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 2px;
+  font-size: 1.1em !important;
+  padding: 10px 15px 10px 15px;
+
+  }
+
+
+  .navbar-collapse {
+    background-color: #4285F4;
+  }
+
+  .navbar-collapse.in {
+    overflow-y: visible;
+  }
+
+  .navbar-toggle {
+    margin-top: 15px;
+    background-color: #DDDDDD;
+  }
+
+  .navbar-toggle:hover {
+    background-color: #F4F4F4 !important;
+  }
+
 
  .navbar-left {
  	padding-top: 10px;
@@ -41,12 +95,18 @@ h1 {
  	color: white;
  }
 
+  .navbar-right {
+    margin-top: 12px;
+  }
+
   .navbar-text  {
   	color: white !important;
   }
 
- .gem-info {
+ #gem-info {
  	height: 50px;
+  width: 100%;
+
  }
 
  .cover_header {
@@ -77,6 +137,12 @@ h1 {
 
  .talent-logo {
 	padding-top: 20px;
+}
+
+.talent-logo-sign-in {
+  text-align: center;
+  padding-top: 20px;
+  margin: 0 auto;
 }
 
 #welcome {
@@ -189,6 +255,8 @@ h1 {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+
 
 
 

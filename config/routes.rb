@@ -14,6 +14,10 @@ Rails.application.routes.draw do
     get '/verify', :to => 'pages#verify'
 
  
+    authenticated :user do 
+      root 'surveys#index', as: "authenticated_root"
+    end 
+
 
 
      root to: "pages#index"
