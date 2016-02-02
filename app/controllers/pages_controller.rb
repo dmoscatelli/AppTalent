@@ -4,6 +4,9 @@ class PagesController < ApplicationController
 	def index
 	end 
 
+	def privacy
+	end 
+
 
 	def verify
 		if session[:company_key] && current_user

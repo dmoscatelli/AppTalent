@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
     # This is a page to verify the company key, if the user has not done so already
     get '/verify', :to => 'pages#verify'
-
+    get '/privacy', :to => 'pages#privacy'
  
     authenticated :user do 
       root 'surveys#index', as: "authenticated_root"

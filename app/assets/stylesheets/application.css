@@ -24,13 +24,17 @@ h1 {
 	font-size: 4.0em;
 }
 
+.btn {
+  border: 0px;
+  border-radius: 0px;
+}
+
 .flash {
   width: 100%;
   position: absolute;
   z-index: 99;
 
 }
-
 
  .navbar {
  	background-color: #4285F4;
@@ -42,25 +46,24 @@ h1 {
  }
 
  #btn-custom-log {
-  margin-top: 3px;
+  margin-top: 4px;
   background: #4285F4;
   color: white; 
   text-decoration: none;
-  -moz-border-radius: 1px;
-  -webkit-border-radius: 1px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
   border-radius: 0px;
-  font-size: 1.1em !important;
   padding: 10px 15px 10px 15px;
 
   }
 
   #btn-custom-log:hover {
-  margin-top: 3px;
+  margin-top: 4px;
   background: #5CB85C;
   color: white; 
   text-decoration: none;
-  -moz-border-radius: 1px;
-  -webkit-border-radius: 1px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
   border-radius: 2px;
   font-size: 1.1em !important;
   padding: 10px 15px 10px 15px;
@@ -95,6 +98,10 @@ h1 {
  	color: white;
  }
 
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+
   .navbar-right {
     margin-top: 12px;
   }
@@ -112,7 +119,7 @@ h1 {
  .cover_header {
  	text-align: center;
  	height: 700px;
- 	background: url(/assets/bg_15.jpg) #303a43; 
+ 	background: url(/assets/test4.jpg) #303a43; 
  	background-size: cover;
  	padding: 60px 0 60px 0;
 
@@ -173,11 +180,12 @@ h1 {
  }
 
  #comp-key {
- 	height: 50px;
+ 	height: 49px;
  	font-size: 1.2em;
  	text-align: center;
  	text-transform: uppercase;
- 	border: 1px solid #5CB85C;
+  border-radius: 0px;
+ 	/*border: 1px solid #5CB85C;*/
  }
 
  #comp-error-key {
@@ -189,8 +197,6 @@ h1 {
 
  }
 
-
-
  #comp-button {
  	text-transform: none;
  }
@@ -198,6 +204,10 @@ h1 {
   
 .modal-body {
 
+}
+
+.body-text {
+  text-align: center;
 }
 
 .key-container {
@@ -256,7 +266,10 @@ h1 {
   border-top-right-radius: 0;
 }
 
-
+.footer-text > li {
+  display: inline-block;
+  padding: 10px;
+}
 
 
 

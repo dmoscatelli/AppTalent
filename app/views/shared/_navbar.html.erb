@@ -9,14 +9,18 @@
       </button>
 
       <div class="navbar-header">
-        <%= link_to (image_tag "plex_white_strip.png"), root_path, class: "nav navbar-left" %>
+        <%= link_to (image_tag "goplex.png"), root_path, class: "nav navbar-left" %>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
+         <ul class="nav navbar-nav navbar-right">
             <li>
               <p class="navbar-text">
+                 <li><%= link_to "How it works", "#" %></li>
+                 <li><%= link_to "Register your company", "#" %></li>
+                 <li><%= link_to "About", "#" %></li>
+                 <li><%= link_to "Help", "#" %></li>
                 <% if user_signed_in?%>
                   Logged in as:
                   <b> <%= current_user.email %> </b>

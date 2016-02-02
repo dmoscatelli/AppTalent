@@ -5,22 +5,14 @@
 		<br>
 		<br>
 <div class="signin-box">
-
-
-
 <div class='form-group col-sm-12'>
-
-
 <%= form_tag pages_path, :id => "verify-key" do %>
-<%= text_field_tag :company_key, nil, class: 'form-control', id: "comp-key", placeholder: "Enter company key" %>
+<%= text_field_tag :company_key, nil, class: 'form-control', id: "comp-key", placeholder: "Enter company key", autofocus: true %>
 <br>
  <!-- Button trigger modal -->
 <%= submit_tag "Verify Key", class: "btn btn-success btn-lg btn-block", id: "comp-button" %>
-	
 <% end %>
 </div>
-
-
   <!-- Modal -->
   <div class="modal fade" id="notes" tabindex="-1" role="dialog" aria-labelledby="todo" aria-hidden="true">
     <div class="modal-dialog">
@@ -38,12 +30,16 @@
         <div class="modal-footer">
 
 			<%= button_to "Continue", new_user_registration_path, :id => "continue-button", :class =>  "btn btn-success btn-lg btn-block", :method => :get %> 
-        </div>
-      </div>
-    </div>
+        </div> <!-- key container --> 
+      </div> <!-- Modal Footer -->
+    </div> <!-- Modal body -->
+  </div> <!-- Modal fade -->
+</div> <!-- Sign in box -->
+</div> <!-- Cover Header -->
+
+<div class="container">
+  <div class="body-text">
+    <br>
+  <h2>Talent with a boost</h2>
   </div>
-
-
-
-</div>
 </div>
