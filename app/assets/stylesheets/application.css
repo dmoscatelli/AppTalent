@@ -223,6 +223,20 @@ h1 {
   
 }
 
+#email-cover {
+  clear: both;
+  background-color: #4285F4;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  margin-top: 100px;
+  
+}
+
+#email-text {
+  margin: 0px;
+  padding: 10px;
+}
 
 .modal-footer {
   text-align: center;
@@ -277,6 +291,9 @@ h1 {
   text-align: center;
 }
 
+#radio-key {
+  margin-top: 100px;
+}
 
 /* for typed JS file styling*/
 .typed-cursor{
@@ -309,14 +326,82 @@ animation: blink 0.7s infinite;
   padding: 10px;
 }
 
-.step-1 {
-  padding-top: 100px;
+
+/* styling for radio buttons */
+
+label.btn span {
+  font-size: 1.5em ;
 }
 
-.step-2 {
-  padding-top: 100px;
-  clear: both;
+label input[type="radio"] ~ i.fa.fa-circle-o{
+    color: #c8c8c8;    display: inline;
 }
+label input[type="radio"] ~ i.fa.fa-check-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-check-circle-o{
+    color: #4285F4;    display: inline;
+}
+label:hover input[type="radio"] ~ i.fa {
+color: #4285F4;
+}
+
+label input[type="checkbox"] ~ i.fa.fa-square-o{
+    color: #c8c8c8;    display: inline;
+}
+label input[type="checkbox"] ~ i.fa.fa-check-square-o{
+    display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-square-o{
+    display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o{
+    color: #4285F4;    display: inline;
+}
+label:hover input[type="checkbox"] ~ i.fa {
+color: #7AA3CC;
+}
+
+div[data-toggle="buttons"] label.active{
+    color: #4285F4;
+}
+
+div[data-toggle="buttons"] label {
+display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+line-height: 2em;
+text-align: left;
+white-space: nowrap;
+vertical-align: top;
+cursor: pointer;
+background-color: none;
+border: 0px solid 
+#c8c8c8;
+border-radius: 3px;
+color: #c8c8c8;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+div[data-toggle="buttons"] label:hover {
+color: #4285F4;
+}
+
+div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+/* End styling for radio buttons */
+
 
 
  input { 

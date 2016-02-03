@@ -7,6 +7,15 @@ class PagesController < ApplicationController
 	def privacy
 	end 
 
+	def register
+	end 
+
+	def help
+	end 
+
+	def about 
+	end 
+
 
 	def verify
 		if session[:company_key] && current_user

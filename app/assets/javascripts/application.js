@@ -66,6 +66,11 @@ $(document).ready(function() {
   $("#verify-key").submitWithAjax();
 });
 
+// End of Key verification
+
+
+//This is for typed plugin
+
 
 jQuery(document).ready(function () {
  // jquery typed plugin
@@ -81,7 +86,25 @@ jQuery(document).ready(function () {
         resetCallback: function () { newTyped(); }
     });
 });  
+// End of typed plugin
 
 
+//----------------------------------
+
+// This is for scroll to anchor on homepage 
+jQuery(document).ready(function () {
+    function scrollToAnchor(aid){
+        var aTag = $("a[name='"+ aid +"']");
+        $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+    }
+
+    scrollToAnchor('anchor-point');
+
+
+    $("#js-anchor").click(function() {
+       scrollToAnchor('anchor-point');
+    });
+});
+// End of scroll to anchor on home page
 
 
